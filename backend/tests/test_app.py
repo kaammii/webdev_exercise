@@ -51,6 +51,15 @@ class TestApp(TestCase):
         self.client.post("/users")
         response = self.client.get("/users/1")
         self.assertEqual(response.status_code, 200)
+
+    def test_delete_user_by_id(self):
+        self.client.post("/users")
+        del_response = self.client.delete("/users/1")
+        users = self.client.get("/users")
+        data = users.data.decode("utf-8")
+        data = json.loads(data)
+        self.assertEqual(len(data['users']), 9)
+        self.assertEqual(del_response.status_code, 200)
     
     # update user skills by id
     def test_update_user_skills_by_id(self):
