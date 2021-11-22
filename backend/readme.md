@@ -29,7 +29,7 @@
             ]
         }
 
-### /users?skill=<skill> (GET)
+### /users?skill={skill} (GET)
 
     * Returns a list of all users with the specified skill.
 
@@ -62,7 +62,7 @@
         }
         ```
 
-### /users/<id> (GET)
+### /users/{id} (GET)
 
     * Returns a user with the specified ID.
 
@@ -82,7 +82,7 @@
         }
         ```
 
-### /users/<id> (DELETE)
+### /users/{id} (DELETE)
 
     * Deletes a user with the specified ID.
 
@@ -127,7 +127,7 @@
 
         ```Users deleted```
 
-### /users/<id>/skills (PUT)
+### /users/{id}/skills (PUT)
     
         * Adds a skill to a user.
     
@@ -177,7 +177,7 @@
         }
         ```
 
-### /users/<id>/skills/<skill> (DELETE)
+### /users/{id}/skills/{skill} (DELETE)
 
     * Removes a skill from a user.
 
