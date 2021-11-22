@@ -1,11 +1,11 @@
 import "./App.css";
 import Users from "./Users";
 
-function App() {
+function App(): JSX.Element {
   return (
     <div className="container">
       <h3>Platform Users</h3>
-      <Users />
+      <Users data-testid="users" />
     </div>
   );
 }
