@@ -4,15 +4,30 @@
 
 ### /users (GET)
 
+    * Returns a list of users and their skills
+
     * Returns:
-        * 200:
-            * users: [{
-                * id: 1,
-                * name: 'John Doe',
-                * email: '
-                * created_at: '2019-01-01 00:00:00',
-                * updated_at: '2019-01-01 00:00:00'
-            }]
+        ```json
+        {
+            "users": [
+                {
+                    "id": 1,
+                    "name": "John Doe",
+                    "skills": [
+                        'JavaScript',
+                        'Python',
+                    ]
+                },
+                {
+                    "id": 2,
+                    "name": "Jane Doe",
+                    "skills": [
+                        'JavaScript',
+                        'Python',
+                    ]
+                }
+            ]
+        }
 
 ### /users?skill=<skill> (GET)
 
