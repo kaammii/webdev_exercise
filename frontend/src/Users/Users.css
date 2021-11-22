@@ -39,3 +39,8 @@
 .users-actions > button:hover {
   background-color: #042c55;
 }
+
+
+.addskills_form {
+  margin-top: 15px;
+}
